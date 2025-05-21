@@ -1,12 +1,12 @@
 export const METADATA = {
-  author: "Shubh Porwal",
-  title: "Portfolio | Shubh Porwal",
+  author: "Aadishesh Padasalgi",
+  title: "Portfolio | Aadishesh Padasalgi",
   description:
-    "Shubh Porwal is a passionate Frontend Engineer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
-  siteUrl: "https://www.shubhporwal.me/",
+    "Aadishesh Padasalgi is a passionate AI Engineer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
+  siteUrl: "https://www.aadisheshpadasalgi.in/",
   twitterHandle: "@shubhporwal24",
   keywords: [
-    "Shubh Porwal",
+    "Aadishesh Padasalgi",
     "Frontend Engineer",
     "React Native Developer",
     "Software Engineer",
@@ -34,6 +34,10 @@ export const MENULINKS = [
     ref: "projects",
   },
   {
+    name: "Research",
+    ref: "research",
+  },
+  {
     name: "Work",
     ref: "work",
   },
@@ -44,59 +48,49 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "A pragmatic Frontend Developer",
-  "I build things for the web",
-  "I create aesthetic and modern apps",
+  "I turn data into delusions of intelligence",
+  "My AI models have trust issues—and so do I",
+  "I whisper to GPUs and yell at Python errors",
+  "Building Skynet, but make it aesthetic",
+  "I don't overfit—my models are just clingy"
 ];
 
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto: shubhporwal73@gmail.com",
+    url: "mailto: aadisheshpadasalgi@gmail.com",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/shubhporwal/",
+    url: "https://www.linkedin.com/in/aadishesh-padasalgi/",
   },
   {
     name: "github",
-    url: "https://github.com/shubh73",
+    url: "https://github.com/toxicskulll",
   },
-  {
-    name: "instagram",
-    url: "https://www.instagram.com/shubhii73/",
-  },
-  {
-    name: "twitter",
-    url: "https://x.com/shubhporwal24",
-  },
+  // {
+  //   name: "instagram",
+  //   url: "https://www.instagram.com/itz.aadi.2476",
+  // },
+  // {
+  //   name: "twitter",
+  //   url: "https://x.com/shubhporwal24",
+  // },
 ];
 
 export const SKILLS = {
   languagesAndTools: [
-    "html",
-    "css",
-    "javascript",
-    "typescript",
-    "sass",
-    "nodejs",
-    "webpack",
-    "vite",
-    "firebase",
-    "figma",
-    "tanstack-query",
+    "python",
+    "colab",
   ],
   librariesAndFrameworks: [
-    "react",
-    "redux",
-    "nextjs",
-    "tailwindcss",
-    "styledcomponents",
-    "antdesign",
-    "chakra-ui",
+    "tensorflow",
+    "huggingface",
+    "restapi",
+    "kaggle",
   ],
   databases: ["mysql", "mongodb"],
-  other: ["git", "sanity-io"],
+  other: ["git", "github"],
 };
 
 export const PROJECTS = [
@@ -136,6 +130,27 @@ export const PROJECTS = [
     gradient: ["#142D46", "#2E4964"],
     url: "https://github.com/shubh73/tesla",
     tech: ["react"],
+  },
+];
+
+export const RESEARCH_PAPERS = [
+  {
+    name: "Airbnb",
+    image: "/projects/airbnb.webp",
+    blurImage: "/projects/blur/airbnb-blur.webp",
+    description: "Airbnb UI clone using NextJS + Tailwind CSS 🛏️",
+    gradient: ["#F14658", "#DC2537"],
+    url: "https://shubh73-airbnb.vercel.app/",
+    tech: ["react", "nextjs", "tailwindcss", "mapbox"],
+  },
+  {
+    name: "",
+    image: "/projects/medium.webp",
+    blurImage: "/projects/blur/medium-blur.webp",
+    description: "",
+    gradient: [""],
+    url: "",
+    tech: [""],
   },
 ];
 

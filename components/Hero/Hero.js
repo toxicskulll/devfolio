@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import Typed from "typed.js";
 import gsap from "gsap";
@@ -79,13 +80,13 @@ const Hero = () => {
         <h5
           className={`${styles.intro} font-mono font-medium text-indigo-light staggered-reveal`}
         >
-          Hi, my name is
+          Yooo, myself
         </h5>
         <h1 className={`${styles.heroName} text-white text-6xl font-semibold`}>
           <span className={`relative ${styles.emphasize} staggered-reveal`}>
-            Shubh
+            Aadishesh
           </span>
-          <span className="staggered-reveal"> Porwal</span>
+          <span className="staggered-reveal"> Padasalgi</span>
         </h1>
         <p>
           <span
@@ -98,7 +99,7 @@ const Hero = () => {
         </div>
         <div className="staggered-reveal pt-4">
           <Button href={`#${MENULINKS[4].ref}`} classes="link" type="primary">
-            Let&apos;s Talk
+            Let&apos;s Connect
           </Button>
         </div>
       </div>

@@ -1,0 +1,127 @@
+.skillItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  padding: 12px;
+  border-radius: 12px;
+  perspective: 1000px;
+  will-change: transform;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: translateY(-8px) rotateX(5deg);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.1),
+      0 0 0 1px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    
+    &::before {
+      opacity: 1;
+    }
+
+    .skillIcon {
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+      transform: scale(1.15) translateZ(20px);
+    }
+
+    .skillName {
+      transform: translateX(-50%) translateY(0) translateZ(30px);
+      box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.3);
+      opacity: 1;
+    }
+  }
+}
+
+.skillIcon {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: grayscale(0.2);
+  transform-style: preserve-3d;
+  will-change: transform, filter;
+  backface-visibility: hidden;
+}
+
+.skillName {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: linear-gradient(135deg, 
+    rgba(0, 0, 0, 0.95), 
+    rgba(0, 0, 0, 0.85)
+  );
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid rgba(0, 0, 0, 0.95);
+    filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.1));
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 1px;
+    background: linear-gradient(45deg, 
+      rgba(255,255,255,0.2), 
+      rgba(255,255,255,0.1)
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+}
+
+.skillItem:hover .skillName::after {
+  opacity: 1;
+} 

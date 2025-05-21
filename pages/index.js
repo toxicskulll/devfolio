@@ -11,11 +11,13 @@ import About1 from "@/components/About/About1";
 import Skills from "@/components/Skills/Skills";
 import About2 from "@/components/About/About2";
 import Projects from "@/components/Projects/Projects";
+import ResearchPapers from "@/components/ResearchPapers/ResearchPapers";
 import Work from "@/components/Work/Work";
 import Collaboration from "@/components/Collaboration/Collaboration";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import { displayFancyLogs } from "utils/log";
+import About3 from "../components/About/About3";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({ nullTargetWarn: false });
@@ -63,7 +65,7 @@ export default function Home() {
               role="img"
               className="text-gray-light-1 opacity-10 sm:text-9xl xs:text-8xl inline-block -z-10 absolute rotate-90 right-0 md:top-52 xs:top-96"
             >
-              DEV
+              AADI
             </div>
             <div className="fixed top-0 left-0 h-screen w-screen -z-1" />
             <Hero />
@@ -71,6 +73,8 @@ export default function Home() {
             <Skills />
             <About2 clientHeight={clientHeight} />
             <Projects isDesktop={isDesktop} clientHeight={clientHeight} />
+            <About3 clientHeight={clientHeight} />
+            <ResearchPapers isDesktop={isDesktop} clientHeight={clientHeight} />
             <Work isDesktop={isDesktop} />
             <Collaboration clientHeight={clientHeight} />
             <Contact />

@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-const About2 = ({ clientHeight }) => {
+const About3 = ({ clientHeight }) => {
   const sectionRef = useRef(null);
   const quoteRef = useRef(null);
 
@@ -41,7 +41,7 @@ const About2 = ({ clientHeight }) => {
           ref={quoteRef}
           className="font-medium text-[2.70rem] md:text-6xl lg:text-[4rem] text-center"
         >
-          My{" "}
+          Where{" "}
           <span
             className="about-3 font-bold"
             style={{
@@ -52,13 +52,13 @@ const About2 = ({ clientHeight }) => {
               WebkitTextFillColor: "transparent",
             }}
           >
-            deep
+            code
           </span>{" "}
-          obsession with precision means even my AI models fear rounding errors.
+          meets curiosity, and research papers become reality.
         </h1>
       </div>
     </section>
   );
 };
 
-export default About2;
+export default About3; 
